@@ -1,0 +1,137 @@
+$body-bg: #272727;
+$text-color: #d4d4d4;
+$heading-color: #ffffff;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $body-bg;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner-section {
+  background: linear-gradient(#01060a, #35525c);
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    border-right: 1600px solid transparent;
+    border-bottom: 50px solid $body-bg;
+  }
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.2rem;
+    color: $heading-color;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    color: $heading-color;
+
+  }
+
+  & > div {
+    gap: 20px;
+  }
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-inner {
+
+
+  .item-thumb {
+    position: relative;
+
+
+    img {
+      display: block;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .discount-badge {
+      position: absolute;
+      bottom: -3px;
+      left: -3px;
+      z-index: 3;
+      background-color: #ff5400;
+      color: #ffffff;
+      padding: 4px 5px 4px 10px;
+      border-radius: 2px 0 0 2px;
+      height: 25px;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 25px;
+        width: 7px;
+        transform: skew(10deg);
+        background-color: #ff5400;
+        position: absolute;
+        bottom: 0;
+        right: -4px;
+        border-radius: 0 2px 2px 0;
+      }
+    }
+  }
+
+  .item-info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+}

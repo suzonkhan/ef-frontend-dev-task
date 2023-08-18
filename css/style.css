@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  color: #d4d4d4;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner-section {
+  background: linear-gradient(#01060a, #35525c);
+  position: relative;
+  overflow: hidden;
+}
+.banner-section img {
+  display: block;
+}
+.banner-section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  border-right: 1600px solid transparent;
+  border-bottom: 50px solid #272727;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-header h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 0;
+}
+.section-header a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.section-header > div {
+  gap: 20px;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-inner .item-thumb {
+  position: relative;
+}
+.item-inner .item-thumb img {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.item-inner .item-thumb .discount-badge {
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  z-index: 3;
+  background-color: #ff5400;
+  color: #ffffff;
+  padding: 4px 5px 4px 10px;
+  border-radius: 2px 0 0 2px;
+  height: 25px;
+}
+.item-inner .item-thumb .discount-badge:after {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 7px;
+  transform: skew(10deg);
+  background-color: #ff5400;
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  border-radius: 0 2px 2px 0;
+}
+.item-inner .item-info {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.item-inner .item-info a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+.item-inner .item-info p {
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
