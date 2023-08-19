@@ -13,12 +13,98 @@
 </head>
 <body>
 
-<header>
-    <div class="container">
+<header class="main-header">
+    <div class="header-inner">
+        <div class="logo"><a href=""><img src="images/logo.webp" alt=""></a></div>
+        <div class="navigation">
+            <div class="top-nav">
+                <ul>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">Pre Order</a></li>
+                    <li><a href="">Up Coming</a></li>
+                    <li><a href="">Support 24/7</a></li>
+                </ul>
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li class="has-children"><a id="pc-menu-item" href="#"><i class="ef ef-30x ef-pc"></i> PC</a>
+                        <div id="pc-megamenu-panel" class="megamenu-panel">
+                            <div class="menu-heading">
+                                <div>Platforms</div>
+                                <div><a href="">View all</a></div>
+                            </div>
+                            <ul class="inline-menu">
+                                <li><a href=""> <i class="ef ef-40x ef-steam"></i> Steam </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-ubisoft"></i> Ubisoft Connect </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-ea-app"></i> EA App </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-battle"></i>Battle.net </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-rockstar"></i>Rockstar </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-gog"></i>GOG.com </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-microsoft"></i>Microsoft Store </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-epic"></i>Epic </a></li>
+                            </ul>
+                            <div class="menu-heading">
+                                <div>Prepaid cards</div>
+                                <div><a href="">View all</a></div>
+                            </div>
+                            <ul class="block-menu">
+                                <li><a href=""> <i class="ef ef-logo-steam-40-150"></i> Steam Gift Cards </a></li>
+                                <li><a href=""> <i class="ef ef-40x ef-ig"></i> IG Gift Cards </a></li>
+                                <li><a href=""> <i class="ef ef-logo-blizzard-40-72"></i> Blizzard Gift Cards </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-children"><a href="#"><i class="ef ef-30x ef-playstation"></i> Playstation</a></li>
+                    <li class="has-children"><a href="#"><i class="ef ef-30x ef-xbox"></i> Xbox</a></li>
+                    <li class="has-children"><a href="#"><i class="ef ef-30x ef-nintendo"></i> Nintendo</a></li>
+                </ul>
+                <div id="search-wrapper">
+                    <input type="text" placeholder="Minecraft, RPG, multiplayer...">
+                    <button id="search-trigger" onclick="showSearch()"><i class="ef ef-30x ef-search"></i></button>
+                    <button id="close-search" onclick="hideSearch()"><i class="ef ef-30x ef-close"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="customer-navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <svg width="35" height="35" id="Layer_1" viewBox="0 0 100 100"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="m24.51 79h50.97c.54 0 1.05-.22 1.43-.6s.58-.9.57-1.44c-.24-12.17-8.55-22.49-19.72-25.82 3.76-2.51 6.24-6.79 6.24-11.64 0-7.72-6.28-14-14-14s-14 6.28-14 14c0 4.85 2.48 9.13 6.23 11.64-11.17 3.34-19.48 13.65-19.72 25.82-.01.54.2 1.06.57 1.44s.9.6 1.43.6zm15.49-39.5c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10-10-4.49-10-10zm10 14.5c12.02 0 22.1 9.25 23.36 21h-46.72c1.26-11.75 11.34-21 23.36-21z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="35" height="35" id="Layer_1" viewBox="0 0 100 100"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="m24.51 79h50.97c.54 0 1.05-.22 1.43-.6s.58-.9.57-1.44c-.24-12.17-8.55-22.49-19.72-25.82 3.76-2.51 6.24-6.79 6.24-11.64 0-7.72-6.28-14-14-14s-14 6.28-14 14c0 4.85 2.48 9.13 6.23 11.64-11.17 3.34-19.48 13.65-19.72 25.82-.01.54.2 1.06.57 1.44s.9.6 1.43.6zm15.49-39.5c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10-10-4.49-10-10zm10 14.5c12.02 0 22.1 9.25 23.36 21h-46.72c1.26-11.75 11.34-21 23.36-21z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
 
+            </ul>
+
+
+        </div>
     </div>
 </header>
 <section class="banner-section">
+    <div class="banner-inner">
+        <div class="container">
+            <div class="banner-content">
+                <p class="banner-hint">In 15 Days</p>
+                <h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, error! </h1>
+                <p><span class="discount-badge">20%</span> 900€</p>
+            </div>
+
+        </div>
+    </div>
     <img src="images/banner-image.png" alt="">
 </section>
 <section class="trending-section">
@@ -37,11 +123,12 @@
                 <div class="item-inner">
                     <a class="item-thumb" href="#">
                         <span class="discount-badge">20%</span>
-                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp" alt="">
+                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp"
+                             alt="">
                     </a>
                     <div class="item-info">
                         <div>
-                            <h3><a href="">Armored Core VI</a> </h3>
+                            <h3><a href="">Armored Core VI</a></h3>
                         </div>
                         <div>
                             <p class="item-price"> 19.99€ </p>
@@ -53,11 +140,12 @@
                 <div class="item-inner">
                     <a class="item-thumb" href="#">
                         <span class="discount-badge">20%</span>
-                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp" alt="">
+                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp"
+                             alt="">
                     </a>
                     <div class="item-info">
                         <div>
-                            <h3><a href="">Armored Core VI</a> </h3>
+                            <h3><a href="">Armored Core VI</a></h3>
                         </div>
                         <div>
                             <p class="item-price"> 19.99€ </p>
@@ -69,11 +157,12 @@
                 <div class="item-inner">
                     <a class="item-thumb" href="#">
                         <span class="discount-badge">20%</span>
-                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp" alt="">
+                        <img src="https://static.electronicfirst.com/website/uploads/2023/08/05/static_banner_1691218181_64cdf105a381f.webp"
+                             alt="">
                     </a>
                     <div class="item-info">
                         <div>
-                            <h3><a href="">Armored Core VI</a> </h3>
+                            <h3><a href="">Armored Core VI</a></h3>
                         </div>
                         <div>
                             <p class="item-price"> 19.99€ </p>
@@ -85,5 +174,6 @@
         </div>
     </div>
 </section>
+<script src="js/main-script.js"></script>
 </body>
 </html>
