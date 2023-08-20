@@ -485,8 +485,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .header-inner .customer-navigation button:hover svg path {
-  stroke: blue;
-  fill: blue;
+  stroke: #327ff7;
+  fill: #327ff7;
 }
 .header-inner .customer-navigation button#mobile-menu-trigger {
   position: relative;
