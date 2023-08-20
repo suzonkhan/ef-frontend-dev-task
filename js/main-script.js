@@ -8,6 +8,11 @@ function hideSearch() {
 
 document.getElementById("pc-menu-item").addEventListener("click", function (e) {
     e.preventDefault();
+    this.parentElement.classList.toggle("show-sub-menu")
+})
+document.getElementById("mobile-menu-trigger").addEventListener("click", function (e) {
+    e.preventDefault();
     console.log("Hello")
-    document.getElementById("pc-megamenu-panel").classList.toggle("show-panel");
+    this.classList.toggle("close-popup-menu")
+    document.getElementsByClassName("navigation")[0].classList.toggle("popup-menu-activated");
 })
