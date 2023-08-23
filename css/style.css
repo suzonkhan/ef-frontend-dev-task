@@ -609,10 +609,21 @@ img {
   display: block;
   position: absolute;
   bottom: 0;
-  right: 0;
   z-index: 2;
   border-right: 1600px solid transparent;
   border-bottom: 50px solid #272727;
+}
+@media screen and (min-width: 1600px) {
+  .banner-section:after {
+    right: auto;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .banner-section:after {
+    right: 0;
+    left: auto;
+  }
 }
 
 .section-header {
